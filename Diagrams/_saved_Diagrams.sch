@@ -1,0 +1,75 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:CAP C2
+U 1 1 5C8D02D2
+P 4900 3450
+F 0 "C2" V 4585 3450 50  0000 C CNN
+F 1 "CAP" V 4676 3450 50  0000 C CNN
+F 2 "" H 4900 3450 50  0001 C CNN
+F 3 "~" H 4900 3450 50  0001 C CNN
+	1    4900 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:CAP C1
+U 1 1 5C8D032E
+P 3900 3950
+F 0 "C1" H 4078 3996 50  0000 L CNN
+F 1 "CAP" H 4078 3905 50  0000 L CNN
+F 2 "" H 3900 3950 50  0001 C CNN
+F 3 "~" H 3900 3950 50  0001 C CNN
+	1    3900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5C8D03BF
+P 4300 3450
+F 0 "L1" H 4300 3665 50  0000 C CNN
+F 1 "INDUCTOR" H 4300 3574 50  0000 C CNN
+F 2 "" H 4300 3450 50  0001 C CNN
+F 3 "~" H 4300 3450 50  0001 C CNN
+	1    4300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3700 3900 3450
+Wire Wire Line
+	3900 3450 4050 3450
+Wire Wire Line
+	4550 3450 4650 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5C8D043A
+P 3900 4200
+F 0 "#PWR?" H 3900 3950 50  0001 C CNN
+F 1 "GND" H 3905 4027 50  0000 C CNN
+F 2 "" H 3900 4200 50  0001 C CNN
+F 3 "" H 3900 4200 50  0001 C CNN
+	1    3900 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3450 3650 3450
+Connection ~ 3900 3450
+Wire Wire Line
+	5150 3450 5300 3450
+Text GLabel 3650 3450 0    50   Input ~ 0
+50_Ohm
+Text GLabel 5300 3450 2    50   Input ~ 0
+ATF-10100IP
+$EndSCHEMATC
